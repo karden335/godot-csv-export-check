@@ -1,0 +1,20 @@
+name: Check the checker
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run as a CLI
+        run: python3 godot_csv_check.py tests/fixture
+      - name: Run as a composite action
+        uses: ./
+        with:
+          project-path: tests/fixture

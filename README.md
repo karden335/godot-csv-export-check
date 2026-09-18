@@ -8,6 +8,17 @@ Godot 4 imports `.csv` files as translation data by default. If your game reads 
 python3 godot_csv_check.py /path/to/your/godot/project
 ```
 
+To run the same source check in GitHub Actions, add this step after checkout:
+
+```yaml
+- uses: actions/checkout@v4
+- uses: karden335/godot-csv-export-check@v0.2.0
+  with:
+    project-path: .
+```
+
+The Action uses the Python on the runner and does not export or launch Godot. GitHub-hosted runner charges, if any, belong to the repository that runs the workflow; check [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions) before adding it to a private repository. This repository's own smoke workflow uses a standard runner in a public repository.
+
 Requires Python 3.9+; no packages, account, network request, or file upload. This source-only checker finds literal `FileAccess.open("res://...csv", ...)`, `file_exists`, and `get_file_as_string` calls in GDScript. Errors exit with code 2. `--json` prints a machine-readable report suitable for CI.
 
 ## Fix a finding

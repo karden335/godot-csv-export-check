@@ -1,0 +1,23 @@
+name: Godot Raw CSV Check
+description: Check literal FileAccess CSV paths in a Godot 4 project before export
+author: karden335
+
+inputs:
+  project-path:
+    description: Path to the Godot project directory relative to the workflow checkout
+    required: false
+    default: .
+
+runs:
+  using: composite
+  steps:
+    - name: Check raw CSV paths
+      shell: bash
+      env:
+        GITHUB_ACTION_PATH: ${{ github.action_path }}
+        INPUT_PROJECT_PATH: ${{ inputs.project-path }}
+      run: python3 "$GITHUB_ACTION_PATH/godot_csv_check.py" "$INPUT_PROJECT_PATH"
+
+branding:
+  icon: check-circle
+  color: blue
