@@ -19,6 +19,6 @@ jobs:
         with:
           project-path: tests/fixture
       - name: Run the published version tag
-        uses: karden335/godot-csv-export-check@v0.2.0
+        uses: karden335/godot-csv-export-check@v0.2.1
         with:
           project-path: tests/fixture
