@@ -11,7 +11,7 @@ python3 godot_csv_check.py /path/to/your/godot/project
 To run the same source check in GitHub Actions, add this step after checkout:
 
 ```yaml
-- uses: actions/checkout@v4
+- uses: actions/checkout@v6
 - uses: karden335/godot-csv-export-check@v0.2.0
   with:
     project-path: .
