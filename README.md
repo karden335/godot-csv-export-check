@@ -6,7 +6,7 @@ Need export-pack verification as well? The [$7 Godot Data Export Guard full kit]
 
 ## Godot editor plugin
 
-Download the ready-to-install v0.3.0 add-on ZIP, extract `addons/csv_export_check` into a Godot 4.4+ project, enable **CSV Export Check** under **Project > Project Settings > Plugins**, and click **Scan current project** in the new dock. The plugin is implemented in GDScript and does not require Python.
+Download the [ready-to-install v0.3.0 add-on ZIP](https://github.com/karden335/godot-csv-export-check/releases/download/v0.3.0/godot-csv-export-check-0.3.0.zip), extract `addons/csv_export_check` into a Godot 4.4+ project, enable **CSV Export Check** under **Project > Project Settings > Plugins**, and click **Scan current project** in the new dock. The plugin is implemented in GDScript and does not require Python.
 
 It reports literal CSV paths that are missing, not configured as **Keep File (No Import)**, not valid UTF-8, or begin with a UTF-8 byte-order mark. It reads project files without editing or uploading them.
 

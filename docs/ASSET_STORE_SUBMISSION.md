@@ -43,6 +43,6 @@ Code and listing text used AI assistance. Verified with a Python smoke test, hea
 - [x] AI assistance is disclosed.
 - [x] No pop-up or in-editor advertisement for the paid version.
 - [x] Python, GDScript analyzer, dock, archive, and editor-startup checks pass.
-- [ ] Stable v0.3.0 GitHub release is public.
+- [x] Stable v0.3.0 GitHub release is public and its uploaded ZIP matches SHA256 `e75ae5592da7c67ad590e05047b380c4147870dfab767c1d64d8c5a3f2c21863`.
 - [ ] Asset Store Draft is saved.
 - [ ] Listing has been submitted for manual review.
