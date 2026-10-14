@@ -2,7 +2,7 @@
 
 Godot 4 imports `.csv` files as translation data by default. If your game reads the raw CSV with `FileAccess`, the file may work in the editor but be missing from an exported game. This free, local checker catches common source-side causes before you ship. Version 0.3.0 includes both a native Godot editor dock and the original Python command-line checker.
 
-Need export-pack verification as well? The [$7 Godot Data Export Guard full kit](https://karrden.itch.io/godot-data-export-guard) adds fresh exported-ZIP checks, byte-for-byte source comparison, broken and fixed sample projects, integration tests, and a release checklist. The open source checker in this repository remains fully usable on its own.
+Need export-pack verification as well? The [$7 Godot Data Export Guard full kit](https://karrden.itch.io/godot-data-export-guard) adds fresh exported-ZIP checks, byte-for-byte source comparison, broken and fixed sample projects, integration tests, and a release checklist. The [$10 Godot Release Safety Bundle](https://itch.io/s/204610/godot-release-safety-bundle) includes that kit plus Godot Save Compatibility Guard. The open source checker in this repository remains fully usable on its own.
 
 ## Godot editor plugin
 

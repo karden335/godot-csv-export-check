@@ -44,5 +44,7 @@ Code and listing text used AI assistance. Verified with a Python smoke test, hea
 - [x] No pop-up or in-editor advertisement for the paid version.
 - [x] Python, GDScript analyzer, dock, archive, and editor-startup checks pass.
 - [x] Stable v0.3.0 GitHub release is public and its uploaded ZIP matches SHA256 `e75ae5592da7c67ad590e05047b380c4147870dfab767c1d64d8c5a3f2c21863`.
-- [ ] Asset Store Draft is saved.
-- [ ] Listing has been submitted for manual review.
+- [x] Asset Store Draft is saved.
+- [x] Listing has been submitted for manual review.
+
+Submitted on 2026-10-14. The authenticated overview reports **Asset Status: Pending** and zero all-time downloads while review is in progress.
