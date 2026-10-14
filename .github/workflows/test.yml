@@ -1,0 +1,33 @@
+name: test
+on:
+  push:
+  pull_request:
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.9"
+      - run: python3 godot_csv_check.py tests/fixture
+      - run: python3 package_plugin.py --check
+  godot:
+    runs-on: ubuntu-latest
+    env:
+      GODOT_VERSION: 4.4.1
+    steps:
+      - uses: actions/checkout@v6
+      - name: Download official Godot editor
+        run: |
+          curl --fail --location --silent --show-error \
+            --output godot.zip \
+            "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q godot.zip -d godot-bin
+          chmod +x "godot-bin/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+      - name: Test the GDScript analyzer
+        run: "godot-bin/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path . --script tests/test_csv_export_analyzer.gd"
+      - name: Test the editor dock flow
+        run: "godot-bin/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path . --script tests/test_csv_export_dock.gd"
+      - name: Start the editor with the plugin enabled
+        run: "godot-bin/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --editor --path . --quit-after 20"

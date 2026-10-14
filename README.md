@@ -1,12 +1,18 @@
-# Godot CSV Check — raw CSV missing after export
+# Godot CSV Export Check — raw CSV missing after export
 
-Godot 4 imports `.csv` files as translation data by default. If your game reads the raw CSV with `FileAccess`, the file may work in the editor but be missing from an exported game. This free, local checker catches common source-side causes before you ship.
+Godot 4 imports `.csv` files as translation data by default. If your game reads the raw CSV with `FileAccess`, the file may work in the editor but be missing from an exported game. This free, local checker catches common source-side causes before you ship. Version 0.3.0 includes both a native Godot editor dock and the original Python command-line checker.
 
 Need export-pack verification as well? The [$7 Godot Data Export Guard full kit](https://karrden.itch.io/godot-data-export-guard) adds fresh exported-ZIP checks, byte-for-byte source comparison, broken and fixed sample projects, integration tests, and a release checklist. The open source checker in this repository remains fully usable on its own.
 
-## Get and run the checker
+## Godot editor plugin
 
-[Download the free v0.2.1 ZIP](https://github.com/karden335/godot-csv-export-check/releases/download/v0.2.1/godot-csv-check-free-0.2.1.zip) and extract it. From the extracted folder, run:
+Download the ready-to-install v0.3.0 add-on ZIP, extract `addons/csv_export_check` into a Godot 4.4+ project, enable **CSV Export Check** under **Project > Project Settings > Plugins**, and click **Scan current project** in the new dock. The plugin is implemented in GDScript and does not require Python.
+
+It reports literal CSV paths that are missing, not configured as **Keep File (No Import)**, not valid UTF-8, or begin with a UTF-8 byte-order mark. It reads project files without editing or uploading them.
+
+## Command line
+
+The standalone Python checker remains available for scripts and CI:
 
 ```sh
 python3 godot_csv_check.py /path/to/your/godot/project
@@ -18,7 +24,7 @@ To run the same source check in GitHub Actions, add this step after checkout:
 
 ```yaml
 - uses: actions/checkout@v6
-- uses: karden335/godot-csv-export-check@v0.2.1
+- uses: karden335/godot-csv-export-check@v0.3.0
   with:
     project-path: .
 ```

@@ -1,0 +1,18 @@
+; Engine configuration file.
+; Keep this project small: it exists to test and preview the editor plugin.
+
+config_version=5
+
+[application]
+
+config/name="Godot CSV Export Check"
+config/features=PackedStringArray("4.4")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/csv_export_check/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

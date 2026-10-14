@@ -1,3 +1,7 @@
-__pycache__/
-*.py[cod]
 .DS_Store
+.godot/
+dist/
+*.uid
+*.import
+*.pyc
+__pycache__/
