@@ -50,7 +50,7 @@ Exact `AI Usage Explanation` field (242/256 characters):
 - [x] Python, GDScript analyzer, dock, archive, and editor-startup checks pass.
 - [x] Stable v0.3.0 GitHub release is public and its uploaded ZIP matches SHA256 `e75ae5592da7c67ad590e05047b380c4147870dfab767c1d64d8c5a3f2c21863`.
 - [x] Asset Store Draft is saved.
-- [x] Moderator-requested thumbnail and AI-disclosure revisions are saved.
-- [x] Listing has been resubmitted for manual review and the moderator ticket has been answered.
+- [x] Moderator-requested thumbnail is saved; the duplicate AI paragraph is absent from the detailed description and the dedicated disclosure is unchanged.
+- [x] Listing has been resubmitted for manual review. The owner reserved the latest moderator-ticket reply for themselves.
 
-Resubmitted on 2026-10-14. The authenticated overview reports **Asset Status: Pending** and zero all-time downloads while review is in progress.
+Resubmitted again on 2026-10-15 after removing the duplicate description disclosure. The authenticated overview reports **Asset Status: Pending** and zero all-time downloads while review is in progress.
