@@ -51,6 +51,6 @@ Exact `AI Usage Explanation` field (242/256 characters):
 - [x] Stable v0.3.0 GitHub release is public and its uploaded ZIP matches SHA256 `e75ae5592da7c67ad590e05047b380c4147870dfab767c1d64d8c5a3f2c21863`.
 - [x] Asset Store Draft is saved.
 - [x] Moderator-requested thumbnail is saved; the duplicate AI paragraph is absent from the detailed description and the dedicated disclosure is unchanged.
-- [x] Listing has been resubmitted for manual review. The owner reserved the latest moderator-ticket reply for themselves.
+- [x] Moderator accepted the corrected listing and the asset is public.
 
-Resubmitted again on 2026-10-15 after removing the duplicate description disclosure. The authenticated overview reports **Asset Status: Pending** and zero all-time downloads while review is in progress.
+Resubmitted again on 2026-10-15 after removing the duplicate description disclosure. The moderator accepted the correction, the ticket is closed, and the authenticated overview reports **Asset Status: Public** with zero all-time downloads at the first post-approval check.
