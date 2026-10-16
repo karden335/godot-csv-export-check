@@ -13,6 +13,6 @@ The plugin reports literal raw CSV paths that are missing, not configured as **K
 
 The Python CLI and GitHub Action remain available for scripts and CI. This source-side check does not inspect an exported pack or prove runtime behavior; export and launch the actual target build before release.
 
-The optional [$7 Godot Data Export Guard](https://karrden.itch.io/godot-data-export-guard) adds real export-pack inspection, source/export byte comparison, broken and fixed fixtures, integration tests, and a release checklist. The [$10 Godot Release Safety Bundle](https://itch.io/s/204610/godot-release-safety-bundle) includes that kit plus Godot Save Compatibility Guard.
+The optional [$3 Godot Data Export Guard](https://karrden.itch.io/godot-data-export-guard) adds real export-pack inspection, source/export byte comparison, broken and fixed fixtures, integration tests, and a release checklist. The [$5 Godot Release Safety Bundle](https://itch.io/s/204610/godot-release-safety-bundle) includes that kit plus Godot Save Compatibility Guard.
 
 AI disclosure: code and text used AI assistance and were validated with Python smoke tests, headless GDScript analyzer and dock tests, archive verification, and Godot editor startup.
